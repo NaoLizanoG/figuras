@@ -25,4 +25,5 @@ public class Punto {
     public void setY(double y) {
         this.y = y;
     }
+
 }
