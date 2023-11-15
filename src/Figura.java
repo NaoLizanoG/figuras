@@ -5,6 +5,7 @@ import java.util.List;
 public class Figura {
     double perimetro;
     double area;
+    double volumen;
    List<Punto> ListaPuntos= new ArrayList<>();
 
 
@@ -28,6 +29,10 @@ public class Figura {
 
     public void imprimirPerimetro (String figura){
         System.out.println("El perìmetro del "+figura+" es:"+perimetro);
+    }
+
+    public void imprimirVolumen (String figura){
+        System.out.println("El volumen del "+figura+" es:"+volumen);
     }
 
 

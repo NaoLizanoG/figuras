@@ -31,7 +31,7 @@ public class Rectangulo extends Figura{
         Punto p1= this.ListaPuntos.get(0);
         Punto p2 = this.ListaPuntos.get(1);
         Punto p3 = this.ListaPuntos.get(2);
-        Punto p4 = this.ListaPuntos.get(3);
+        /*Punto p4 = this.ListaPuntos.get(3);*/
         double l1= p1.calculoDistancia(p2);
         double l2= this.calculoDistancia(p3, p1);
         this.area= l1*l2;

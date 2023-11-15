@@ -17,7 +17,7 @@ public class Triangulo extends Figura{
             this.ListaPuntos.add(punto);
         }
     }
-    double calculoPerimetro(){
+    void calculoPerimetro(){
         Punto p1= this.ListaPuntos.get(0);
         Punto p2 = this.ListaPuntos.get(1);
         Punto p3 = this.ListaPuntos.get(2);
@@ -26,7 +26,6 @@ public class Triangulo extends Figura{
         double l2= this.calculoDistancia(p3, p1);
         double l3= this.calculoDistancia(p2,p3);
         this.perimetro= l1+l2+l3;
-        return this.perimetro;
 
     }
 
@@ -40,7 +39,7 @@ public class Triangulo extends Figura{
         double l3= this.calculoDistancia(p2,p3);
         double s=(l1+l2+l3)/2;
         this.area= Math.sqrt(s*(s-l1)*(s-l2)*(s-l3));
-        return this.area;
 
+        return area;
     }
 }
