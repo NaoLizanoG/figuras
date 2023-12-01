@@ -2,7 +2,7 @@ import java.security.PublicKey;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Figura {
+public abstract class Figura {
     double perimetro;
     double area;
     double volumen;
@@ -22,6 +22,11 @@ public class Figura {
         double dist = Math.sqrt(Math.pow(punto1.getX() - punto2.getX(), 2)+ Math.pow(punto1.getY()-punto2.getY(), 2));
         return dist;
     }
+
+    public abstract double calculoPerimetro();
+   public abstract double calcularArea();
+
+
 
     public void imprimirArea (String figura){
         System.out.println("El àrea del "+figura+" es:"+area);

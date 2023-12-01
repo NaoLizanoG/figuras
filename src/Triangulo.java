@@ -17,7 +17,8 @@ public class Triangulo extends Figura{
             this.ListaPuntos.add(punto);
         }
     }
-    void calculoPerimetro(){
+    @Override
+    public double calculoPerimetro(){
         Punto p1= this.ListaPuntos.get(0);
         Punto p2 = this.ListaPuntos.get(1);
         Punto p3 = this.ListaPuntos.get(2);
@@ -26,10 +27,12 @@ public class Triangulo extends Figura{
         double l2= this.calculoDistancia(p3, p1);
         double l3= this.calculoDistancia(p2,p3);
         this.perimetro= l1+l2+l3;
+        return this.perimetro;
 
     }
 
-    double calcularArea(){
+    @Override
+    public double calcularArea(){
         Punto p1= this.ListaPuntos.get(0);
         Punto p2 = this.ListaPuntos.get(1);
         Punto p3 = this.ListaPuntos.get(2);

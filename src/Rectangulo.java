@@ -15,7 +15,8 @@ public class Rectangulo extends Figura{
             this.ListaPuntos.add(punto);
         }
     }
-    double calculoPerimetro(){
+  @Override
+    public double calculoPerimetro(){
         Punto p1= this.ListaPuntos.get(0);
         Punto p2 = this.ListaPuntos.get(1);
         Punto p3 = this.ListaPuntos.get(2);
@@ -27,7 +28,8 @@ public class Rectangulo extends Figura{
 
     }
 
-    double calcularArea(){
+    @Override
+    public double calcularArea(){
         Punto p1= this.ListaPuntos.get(0);
         Punto p2 = this.ListaPuntos.get(1);
         Punto p3 = this.ListaPuntos.get(2);

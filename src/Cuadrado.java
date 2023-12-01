@@ -15,7 +15,8 @@ public class Cuadrado extends Figura{
                 this.ListaPuntos.add(punto);
             }
         }
-        double calculoPerimetro(){
+        @Override
+        public double calculoPerimetro(){
             Punto p1= this.ListaPuntos.get(0);
             Punto p2 = this.ListaPuntos.get(1);
             double l1= p1.calculoDistancia(p2);
@@ -24,7 +25,8 @@ public class Cuadrado extends Figura{
 
         }
 
-        double calcularArea(){
+        @Override
+       public double calcularArea(){
             Punto p1= this.ListaPuntos.get(0);
             Punto p2 = this.ListaPuntos.get(1);
             double l1= p1.calculoDistancia(p2);
